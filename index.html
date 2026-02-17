@@ -21,7 +21,7 @@ body{
 
   background-image:
     linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)),
-    url("01.jpg");
+    url("01.JPG");
   background-size:cover;
   background-position:center;
   background-repeat:no-repeat;
@@ -101,12 +101,15 @@ h1{
 <body>
   <div class="card">
     <h1>
-      나랑 놀장
+     나랑 놀랭?ㅋ
+    </h1>
 
     <div class="btn-container" id="btnArea">
       <button class="btn yes" id="yesBtn" type="button">Yes</button>
       <button class="btn no" id="noBtn" type="button">No</button>
-   기 확정 ❤️</div>
+    </div>
+
+    <div class="result" id="result">❤️ 나랑 놀기 확정 ❤️</div>
   </div>
 
 <script>
@@ -123,7 +126,7 @@ h1{
 
   yesBtn.addEventListener("click", () => {
     document.body.style.backgroundImage =
-      'linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)), url("02.jpg")';
+      'linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)), url("02.JPG")';
     if (result) result.style.display = "block";
     createHearts();
   });
